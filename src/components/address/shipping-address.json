@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_address_shipping_addresses",
+  "info": {
+    "displayName": "ShippingAddress",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Street": {
+      "type": "text"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Province": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "PostalCode": {
+      "type": "string"
+    }
+  }
+}
