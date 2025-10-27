@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrderNumber": {
+      "type": "string"
+    },
+    "CustomerDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "customer.customer"
+    },
+    "Items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-items.items"
+    },
+    "SubTotal": {
+      "type": "decimal"
+    },
+    "ShippingFee": {
+      "type": "decimal"
+    },
+    "Tax": {
+      "type": "decimal"
+    },
+    "TotalAmount": {
+      "type": "decimal"
+    },
+    "Currency": {
+      "type": "string"
+    },
+    "PaymentMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Paystack",
+        "Cash"
+      ]
+    },
+    "PaymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Paid",
+        "Failed",
+        "Refunded"
+      ]
+    },
+    "OrderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Processing",
+        "Shipped",
+        "Delivered",
+        "Cancelled"
+      ]
+    },
+    "ShippingAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.shipping-address"
+    },
+    "BillingAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.shipping-address"
+    },
+    "Note": {
+      "type": "richtext"
+    }
+  }
+}
