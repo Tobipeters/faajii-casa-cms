@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "shipping_fees",
+  "info": {
+    "singularName": "shipping-fee",
+    "pluralName": "shipping-fees",
+    "displayName": "ShippingFee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "isFreeShipping": {
+      "type": "boolean"
+    }
+  }
+}

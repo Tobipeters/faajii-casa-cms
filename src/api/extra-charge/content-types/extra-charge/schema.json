@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "extra_charges",
+  "info": {
+    "singularName": "extra-charge",
+    "pluralName": "extra-charges",
+    "displayName": "extraCharge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "isFree": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "shippingFee",
+        "tax"
+      ]
+    },
+    "chargeType": {
+      "type": "enumeration",
+      "enum": [
+        "Percentage",
+        "FlatFee"
+      ]
+    }
+  }
+}

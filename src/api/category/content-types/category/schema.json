@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "uid"
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     },
-    "Product": {
+    "product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"

@@ -4,50 +4,58 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "Slug": {
-      "type": "uid",
-      "targetField": "Name"
+    "slug": {
+      "type": "uid"
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     },
-    "Price": {
+    "price": {
       "type": "decimal"
     },
-    "DiscountPrice": {
+    "discountPrice": {
       "type": "decimal"
     },
-    "Currency": {
+    "currency": {
       "type": "string"
     },
-    "Images": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "Stock": {
+    "stock": {
       "type": "integer"
     },
-    "IsFeatured": {
+    "isFeatured": {
       "type": "boolean"
     },
-    "IsActive": {
+    "isActive": {
       "type": "boolean"
+    },
+    "variant": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variant.vairiant"
     }
   }
 }
