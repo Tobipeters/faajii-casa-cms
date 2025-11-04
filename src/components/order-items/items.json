@@ -2,22 +2,20 @@
   "collectionName": "components_order_items_items",
   "info": {
     "displayName": "Items",
-    "icon": "shopping-cart"
+    "icon": "shopping-cart",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Product": {
+    "product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"
     },
-    "Quantity": {
+    "quantity": {
       "type": "integer"
     },
-    "Price": {
-      "type": "decimal"
-    },
-    "SubTotal": {
+    "price": {
       "type": "decimal"
     }
   }

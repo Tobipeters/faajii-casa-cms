@@ -2,23 +2,32 @@
   "collectionName": "components_address_shipping_addresses",
   "info": {
     "displayName": "ShippingAddress",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Street": {
-      "type": "text"
+    "address": {
+      "type": "text",
+      "required": true
     },
-    "City": {
-      "type": "string"
+    "city": {
+      "type": "string",
+      "required": true
     },
-    "Province": {
-      "type": "string"
+    "province": {
+      "type": "string",
+      "required": true
     },
-    "Country": {
-      "type": "string"
+    "country": {
+      "type": "string",
+      "required": true
     },
-    "PostalCode": {
+    "postalCode": {
+      "type": "string",
+      "required": true
+    },
+    "apartment": {
       "type": "string"
     }
   }

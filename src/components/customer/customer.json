@@ -2,18 +2,26 @@
   "collectionName": "components_customer_customers",
   "info": {
     "displayName": "Customer",
-    "icon": "user"
+    "icon": "user",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "FullName": {
-      "type": "string"
+    "firstName": {
+      "type": "string",
+      "required": true
     },
-    "Email": {
-      "type": "email"
+    "email": {
+      "type": "email",
+      "required": true
     },
-    "PhoneNumber": {
-      "type": "string"
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
     }
   }
 }

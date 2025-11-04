@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_variant_vairiants",
+  "info": {
+    "displayName": "variant",
+    "icon": "project-diagram",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "stockQuantitty": {
+      "type": "integer"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
