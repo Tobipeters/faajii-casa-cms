@@ -19,13 +19,13 @@
     },
     "customerDetails": {
       "type": "component",
-      "repeatable": false,
-      "component": "customer.customer"
+      "component": "customer.customer",
+      "repeatable": false
     },
     "items": {
       "type": "component",
-      "repeatable": true,
-      "component": "order-items.items"
+      "component": "order-items.items",
+      "repeatable": true
     },
     "subTotal": {
       "type": "decimal",
@@ -55,6 +55,7 @@
     "paymentStatus": {
       "type": "enumeration",
       "enum": [
+        "Pending",
         "Paid",
         "Failed",
         "Refunded"
@@ -71,13 +72,13 @@
     },
     "shippingAddress": {
       "type": "component",
-      "repeatable": false,
-      "component": "address.shipping-address"
+      "component": "address.shipping-address",
+      "repeatable": false
     },
     "billingAddress": {
       "type": "component",
-      "repeatable": false,
-      "component": "address.shipping-address"
+      "component": "address.shipping-address",
+      "repeatable": false
     },
     "note": {
       "type": "richtext"

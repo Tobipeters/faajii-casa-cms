@@ -3,13 +3,13 @@ services:
     name: strapi
     env: node
     plan: free
-    buildCommand: yarn install && yarn build
+    buildCommand: yarn install --frozen-lockfile && yarn build
     startCommand: yarn start
     healthCheckPath: /_health
     autoDeploy: false
     envVars:
       - key: NODE_VERSION
-        value: 18
+        value: 20
       - key: NODE_ENV
         value: production
 
