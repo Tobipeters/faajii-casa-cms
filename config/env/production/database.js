@@ -13,12 +13,12 @@ module.exports = ({ env }) => {
     connection: {
       client: "postgres",
       connection: {
-        dbUrl: env("DATABASE_URL", "postgresql://faaji_casa_db_user:RLqPLDHf0BvpaU361lVV0BgX9VYlUYj0@dpg-d46hiia4d50c73b2kv30-a.oregon-postgres.render.com/faaji_casa_db"),
-        host: env("DATABASE_HOST", "dpg-d46hiia4d50c73b2kv30-a"),
+        dbUrl: env("DATABASE_URL", "postgresql://postgres:12345&Abcde?!@db.mnnbswrjyzvsjutomgbl.supabase.co:5432/postgres"),
+        host: env("DATABASE_HOST", "db.mnnbswrjyzvsjutomgbl.supabase.co"),
         port: env.int("DATABASE_PORT", 5432),
-        database: env("DATABASE_NAME", "faaji_casa_db"),
-        user: env("DATABASE_USERNAME", "faaji_casa_db_user"),
-        password: env("DATABASE_PASSWORD", "RLqPLDHf0BvpaU361lVV0BgX9VYlUYj0"),
+        database: env("DATABASE_NAME", "postgres"),
+        user: env("DATABASE_USERNAME", "postgres.faaji-casa"),
+        password: env("DATABASE_PASSWORD", "12345&Abcde?!"),
         ssl: {
           rejectUnauthorized: false, // required by Render’s managed PostgreSQL
         },
