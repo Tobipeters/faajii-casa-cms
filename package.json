@@ -5,14 +5,14 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
+    "start": "node api.js && strapi start",
+    "build": "node api.js && strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.30.1",
-    "@strapi/plugin-users-permissions": "5.30.1",
-    "@strapi/strapi": "5.30.1",
+    "@strapi/plugin-users-permissions": "5.53.0",
+    "@strapi/strapi": "5.53.0",
     "better-sqlite3": "11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
